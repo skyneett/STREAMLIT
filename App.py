@@ -21,11 +21,12 @@ st.set_page_config(
 
 # ─── Encabezado ─────────────────────────────────────────────────────
 # ─── Logo alineado a la derecha ────────────────────────────────────
-logo_path = os.path.join("images", "halo-logo-png_seeklogo-403346.png")
-st.markdown(
-    f"<div style='text-align: right;'><img src='/{logo_path}' width='180'></div>",
-    unsafe_allow_html=True
-)
+logo_path = os.path.join("images", "halo-logo.jpg")
+col_logo, col_title = st.columns([1, 5])
+with col_logo:
+    st.image(logo_path, width=120)
+with col_title:
+    st.write("")
 st.title("🌈 Introducción a Streamlit")
 
 st.markdown("""

@@ -11,8 +11,8 @@ opcion = st.sidebar.selectbox(
     ["Tipos de Grafico", "Barras", "Líneas", "Pie"]
 )
 
-# Cargar datos
-df = pd.read_csv("data/datos.csv")
+# Cargar datos desde Excel
+df = pd.read_excel("data/datos.xlsx")
 
 st.header("Graficos de Datos")
 st.write("Los gráficos son una manera de representar los datos de manera visual. Los tipos de gráficos incluyen barras, líneas, pie y dispersión.")

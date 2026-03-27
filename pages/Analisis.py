@@ -5,8 +5,8 @@ import pandas as pd
 
 st.title("📊 Análisis de Datos")
 
-# Cargar datos
-df = pd.read_csv("data/datos.csv")
+# Cargar datos desde Excel
+df = pd.read_excel("data/datos.xlsx")
 
 st.header("Valores del DataSet")
 st.dataframe(df)

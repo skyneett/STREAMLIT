@@ -6,6 +6,12 @@ import numpy as np
 
 
 import os
+# ─── Menú lateral ───────────────────────────────────────────────────
+st.sidebar.title("Menú de Navegación")
+opcion = st.sidebar.radio(
+    "Selecciona una opción:",
+    ("Inicio", "Análisis de Datos", "Configuración", "Ayuda")
+)
 # ─── Configuración de la página ─────────────────────────────────────
 st.set_page_config(
     page_title="Introducción a Streamlit",
@@ -15,7 +21,7 @@ st.set_page_config(
 
 # ─── Encabezado ─────────────────────────────────────────────────────
 # ─── Logo alineado a la derecha ────────────────────────────────────
-logo_path = os.path.join("images", "logoSena.png")
+logo_path = os.path.join("images", "halo-logo-png_seeklogo-403346.png")
 st.markdown(
     f"<div style='text-align: right;'><img src='/{logo_path}' width='180'></div>",
     unsafe_allow_html=True
@@ -94,5 +100,5 @@ descarga_path = os.path.join("images", "descarga.jpg")
 st.image(descarga_path, caption="Ejemplo de uso de Streamlit", use_column_width=True)
 st.markdown("---")
 st.markdown(
-    "👩‍💻 Creado por **Luz Eliana Martínez** | [GitHub](https://github.com/tu-usuario)"
+    "👨‍💻 Creado por **Luis Hernan Torres** y **Cristian Mateo Achury** | [GitHub](https://github.com/skyneett)"
 )
